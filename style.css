@@ -1,0 +1,56 @@
+html, body{
+    height: 100px;
+    width: 99%;
+    background-color: rgb(31, 4, 4);
+}
+.text-center{
+    color: white;
+}
+.button{
+    padding: 20px;
+    margin: 0 3px;
+    border-radius: 9px;
+    border: 2px solid black;
+    cursor: pointer;
+    width: 66px;
+    background-color:rgb(200, 197, 197);
+}
+
+.row{
+    margin: 8px 0;
+}
+.row input{
+    font-size: 60px;
+    padding: 10px 0px;
+    margin: 0;
+    border: 2px solid;
+    border-radius: 5px;
+    color:black;
+    width: 300px;
+    height: 130px;
+}
+
+
+/*-----------utlis--------------*/
+
+
+.text-center{
+    text-align: center;
+}
+
+.bg-red{
+    background: red;
+}
+.mx-auto{
+    margin: auto;
+}
+.flex{
+display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+.item-center{
+    align-items: center;
+}

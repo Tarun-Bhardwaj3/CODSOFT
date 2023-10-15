@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    
+}
+
+body{
+    background-color:black;
+    color: white;
+    background-image: url(/photo/background03-DESKTOP-RQ303BK.jpg);
+    background-repeat: repeat;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 70px;
+    background-color: rgb(64 4 32);
+}
+.right{
+    margin: 16px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 14px 23px;
+    font-size: 20px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(201, 137, 137);
+}
+
+main hr{
+    border: 0;
+    background-color: #694b8a;
+    height: 1.2px;
+    margin: 40px 90px;
+}
+
+
+.left{
+    font-size: 2em;
+    margin-top: 20px;
+   
+}
+
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 120px 0;
+}
+
+.firstsection >  div{
+   width: 30%;
+}
+
+.leftsection{
+  
+    font-size: 3rem ;
+}
+
+.leftsection .button{
+    padding: 50px 0;
+}
+
+.leftsection .btn01{
+    padding: 12px;
+    background-color: rgb(35, 32, 32);
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+   cursor: pointer;
+}
+.rightsection img{
+    width: 90%;
+    
+}
+
+.text-purple{
+    color: purple;
+}
+
+#element{
+    color:purple ;
+    font-size: 45px;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+}
+.header-text h1 span{
+    color: purple;
+}
+
+/*--------------about------------*/
+.secondsection{
+    margin-top: 10px;
+    padding: 50px;
+}
+.about-container{
+    display: flex;
+}
+    
+#about{
+ 
+    color: rgb(147, 126, 147);
+}
+.sub-title{
+    margin: 10px 0;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.about-col-2 h1{
+    font-size: 60px;
+    font-weight: 600px;
+
+}
+.about-col-2 p{
+    margin-bottom:10px ;
+    
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 28px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    color: rgb(131, 2, 131);
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: purple;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+width: 70%;
+margin: 4px 0;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: rgb(227, 107, 15);
+    font-size: 19px;
+}
+
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+.container-flex{
+display: flex;
+gap: 80px;
+}
+
+/*------------------Services-------*/
+
+#services{
+    padding: 30px 0px;
+
+}
+
+.sub-title{
+    font-size: 50px;
+    color: coral;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background:#262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s,transform 0.5s;
+
+}
+.services-list div img{
+    width: 70px;
+    margin: 10px;
+}
+
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+
+/*----------------Contact------------*/
+.container{
+    padding: 40px 60px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #ff004f;
+}
+
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #ababab;
+    margin-right: 15px;
+    display: inline-block;
+    transition: transform 0.5s;
+
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background:#ff004f ;
+}
+
+.contact-right form{
+width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #ff004f;
+}
+
+.copyright{
+width: 100%;
+text-align: center;
+padding: 25px;
+background: #262626;
+font-weight: 300;
+margin-top: 20px;
+}
